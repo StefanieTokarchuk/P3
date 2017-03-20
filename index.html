@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <section class="page-section start-section" id="startScreen">
+    <h1>Extreme Weather</h1>
+    <h2>Test your knowledge</h2>
+    <a href="#" class="btn btn-lg" id="buttonStart">Start</a>
+  </section>
+
+  <div class="question active" id="q1">
+    <img src="https://static.pexels.com/photos/42451/pexels-photo-42451.jpeg" width= 1024px height= 500px>
+    <h1>What Storm Type of Storm is This?</h1>
+    <ul>
+      <li><a href="#" class="choice correct">A Cyclone</a></li>
+      <li><a href="#" class="choice">A Tornado</a></li>
+      <li><a href="#" class="choice">A Hurricane</a></li>
+      <li><a href="#" class="choice">A Typhoon</a></li>
+    </ul>
+    <div class="result correct-answer">CORRECT
+      <a href="#q2" class="next">Next</a>
+    </div>
+    <div class="result wrong-answer">INCORRECT
+      <a href="#q2" class="next">Next</a>
+    </div>
+  </div>
+
+  <div class="question" id="q2">
+    <img src="https://i.ytimg.com/vi/EinzBoVnmRs/maxresdefault.jpg" width= 1024px height= 500px>
+    <h1>What is this?</h1>
+    <ul>
+      <li><a href="#" class="choice">A Cyclone</a></li>
+      <li><a href="#" class="choice correct">A Tornado</a></li>
+      <li><a href="#" class="choice">A Hurricane</a></li>
+      <li><a href="#" class="choice">A Typhoon</a></li>
+    </ul>
+    <div class="result correct-answer">CORRECT
+      <a href="#q3" class="next">Next</a>
+    </div>
+    <div class="result wrong-answer">INCORRECT
+      <a href="#q3" class="next">Next</a>
+    </div>
+  </div>
+
+  <div class="question" id="q3">
+    <img src="http://news.nationalgeographic.com/content/dam/news/2016/07/07/typhoon/01_typhoon.jpg" width= 1024px height= 500px>
+    <h1>What is this?</h1>
+    <ul>
+      <li><a href="#" class="choice">A Cyclone</a></li>
+      <li><a href="#" class="choice">A Tornado</a></li>
+      <li><a href="#" class="choice">A Hurricane</a></li>
+      <li><a href="#" class="choice correct">A Typhoon</a></li>
+    </ul>
+    <div class="result correct-answer">CORRECT
+      <a href="#q4" class="next">Next</a>
+    </div>
+    <div class="result wrong-answer">INCORRECT
+      <a href="#q4" class="next">Next</a>
+    </div>
+  </div>
+
+  <div class="question" id="q4">
+    <img src="https://mgtvwnct.files.wordpress.com/2016/02/hurricane.jpg" width= 1024px height= 500px>
+    <h1>What is this?</h1>
+    <ul>
+      <li><a href="#" class="choice">A Cyclone</a></li>
+      <li><a href="#" class="choice">A Tornado</a></li>
+      <li><a href="#" class="choice correct">A Hurricane</a></li>
+      <li><a href="#" class="choice">A Typhoon</a></li>
+    </ul>
+    <div class="result correct-answer">CORRECT
+      <a href="#final" class="next">Next</a>
+    </div>
+    <div class="result wrong-answer">INCORRECT
+      <a href="#final" class="next">Next</a>
+    </div>
+  </div>
+
+  <div id="final" class="final-result">
+    <h1>Your score is <span id="score"></span>%!</h1>
+    <a href="#" id="restart" >Try Again</a>
+  </div>
+  <script>window.jQuery || document.write ('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
